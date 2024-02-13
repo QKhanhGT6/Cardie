@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark">
+    <LinearLayout
+        android:id="@+id/SetInfo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:id="@+id/tv_return">
+            </TextView>
+            <TextView
+                android:id="@+id/SetName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeMaxTextSize="100sp"
+                android:autoSizeStepGranularity="2sp"
+                android:fontFamily="@font/nunitolight"
+                android:padding="5dp"
+                android:layout_marginLeft="-55dp"
+                android:text="Animals of the earth"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="70sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/diffEasy"
+                android:layout_marginHorizontal="5dp"
+                android:src="@drawable/difficulty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:id="@+id/diffMedium"
+                android:layout_marginHorizontal="5dp"
+                android:src="@drawable/difficulty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:id="@+id/diffHard"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/difficulty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+        </LinearLayout>
+        <TextView
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/nunitolight"
+            android:id="@+id/tv_total_cards"
+            android:text="28 cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/CardViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/SetInfo"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never">
+
+    </androidx.viewpager.widget.ViewPager>
+    <Button
+        android:id="@+id/btn_add_card"
+        android:background="@drawable/card_round_corner_pearl"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/CardViewPager"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="ADD CARD"
+        android:textSize="27dp"
+        android:textColor="@color/textWhite"
+        android:fontFamily="@font/nunitosemibold">
+    </Button>
+
+</RelativeLayout>

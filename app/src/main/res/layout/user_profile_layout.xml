@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserProfileActivity"
+    android:background="@color/backgroundDark">
+
+    <ImageView
+        android:layout_marginTop="-50dp"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/card_round_corner_grey"
+        tools:ignore="MissingConstraints">
+    </ImageView>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:elevation="3dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:background="@drawable/avatar"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/iv_avater">
+    </ImageView>
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:id="@+id/profile_frame"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:background="@drawable/circlefull">
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textSize="43dp"
+            android:textColor="@color/textWhite"
+            android:fontFamily="@font/nunitoregular">
+        </TextView>
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:id="@+id/tv_UserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id: 1793271"
+            android:textSize="17dp"
+            android:textColor="@color/textWhite"
+            android:fontFamily="@font/nunitoregular">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/profile_frame"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/profile_achievement">
+        <ImageView
+            android:id="@+id/img_Achievements_1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/win_cup"
+            tools:ignore="DuplicateIds">
+        </ImageView>
+        <ImageView
+            android:id="@+id/img_Achievements_2"
+            android:layout_marginLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/win_cup"
+            tools:ignore="DuplicateIds">
+        </ImageView>
+        <ImageView
+            android:id="@+id/img_Achievements_3"
+            android:layout_marginLeft="15dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/win_cup"
+            tools:ignore="DuplicateIds">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/profile_achievement"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_round_corner_orange"
+            android:textColor="@color/backgroundWhite"
+            android:text="Return">
+        </Button>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/username_background"
+        tools:ignore="MissingConstraints">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunitoregular"
+        android:text="Level 1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="43dp">
+
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="450dp"
+        android:layout_height="230dp"
+        android:background="@drawable/rectangle_lightblue_top">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/setlist_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="OnSettingButtonClick"
+            android:background="@drawable/ic_settings_black_24dp">
+        </Button>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/set_list"
+            android:textSize="30dp"
+            android:layout_marginLeft="60dp"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="@color/textWhite">
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_profile_pic"
+            android:onClick="OnProfileIconButtonCLick"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_account_circle_black_24dp"
+            android:layout_marginLeft="50dp">
+        </Button>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/num_up"
+        android:layout_below="@id/setlist_top"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:id="@+id/tv_total_sets"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="27dp"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="@color/textWhite">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:gravity="center"
+            android:id="@+id/tv_total_cards"
+            android:layout_marginLeft="160dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="30"
+            android:textSize="27dp"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="@color/textWhite">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:id="@+id/tv_total_practice"
+            android:layout_marginLeft="285dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="27dp"
+            android:fontFamily="@font/nunitosemibold"
+            android:textColor="@color/textWhite">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_num_down"
+        android:layout_below="@id/num_up"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="sets"
+            android:textSize="27dp"
+            android:fontFamily="@font/nunitolight"
+            android:textColor="@color/textWhite">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="160dp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="cards"
+            android:textSize="27dp"
+            android:fontFamily="@font/nunitolight"
+            android:textColor="@color/textWhite">
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="285dp"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="done"
+            android:textSize="27dp"
+            android:fontFamily="@font/nunitolight"
+            android:textColor="@color/textWhite">
+        </TextView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stat_card"
+        android:layout_below="@id/rl_num_down"
+        android:layout_marginTop="20dp"
+        android:layout_width="270dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/backgroundPurple">
+
+        <ImageView
+            android:layout_marginLeft="140dp"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:background="@drawable/pow">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statistic"
+                android:textSize="20dp"
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/textWhite">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stat_intro"
+                android:fontFamily="@font/nunitolight"
+                android:textColor="@color/textWhite"
+                android:layout_marginTop="-5dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_statistic"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/button_dark"
+                android:fontFamily="@font/nunitoregular"
+                android:text="@string/stat"
+                android:textColor="@color/textWhite"
+                android:textSize="12sp"></Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_below="@id/stat_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linear_myset"
+                android:layout_below="@id/stat_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/myset"
+                    android:textColor="@color/textWhite"
+                    android:textSize="27dp"></TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:scrollbars="none"
+                    android:id="@+id/recyclerview_myset"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <Button
+                    android:id="@+id/btn_addSet"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add more set"
+                    android:background="@drawable/card_round_corner_orange"
+                    android:fontFamily="@font/nunitosemibold"
+                    android:textColor="@color/textWhite">
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_peopleset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/peopleset"
+                    android:textColor="@color/textWhite"
+                    android:textSize="27dp">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:scrollbars="none"
+                    android:id="@+id/recyclerview_peopleset"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

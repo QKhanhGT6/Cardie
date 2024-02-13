@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Cardie</string>
+    <string name="login_welcome">Tell us your name</string>
+    <string name="login_hint">Enter your username</string>
+    <string name="set_list">SET LISTS</string>
+    <string name="statistic">STATISTIC</string>
+    <string name="stat_intro">See you test statistic</string>
+    <string name="stat">stat</string>
+    <string name="myset">MY SET</string>
+    <string name="peopleset">PEOPLE SET</string>
+    <string name="card_sample">SET</string>
+    <string name="see_more">See more</string>
+    <string name="TEST">TEST</string>
+    <string name="mode1des">sampletextsampletextsampletextsampletextsampletextsampletext</string>
+    <string name="mode2des">Not ready</string>
+    <string name="mode3des">Not ready</string>
+    <string name="mode4des">Not ready</string>
+    <string name="mode1name">Mode</string>
+    <string name="mode2name">Mode</string>
+    <string name="mode3name">Mode</string>
+    <string name="mode4name">Mode</string>
+    <string name="correct_count">26/27</string>
+    <string name="time_count">15m40s</string>
+    <string name="point_count">1536</string>
+    <string name="correct">correct</string>
+    <string name="time">time</string>
+    <string name="point">point</string>
+    <string-array name="week_select">
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>3 weeks</item>
+        <item>4 weeks</item>
+    </string-array>
+
+
+</resources>
+

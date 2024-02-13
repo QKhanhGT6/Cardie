@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark"
+    tools:context=".AddSetActivity">
+    <ImageView
+        android:id="@+id/navBarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/card_round_corner_grey">
+    </ImageView>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_return"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp">
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD SET"
+            android:textColor="@color/textWhite"
+            android:fontFamily="@font/nunitosemibold"
+            android:textSize="27dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/navBarImg"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Name"
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/textWhite"
+                android:textSize="27dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_add_set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your set name"
+                android:textColorHint="@color/textGrey"
+                android:backgroundTint="#00000000"
+                android:textColor="@color/textWhite"
+                android:fontFamily="@font/nunitolight"
+                android:textSize="27dp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick a background"
+                android:textSize="25dp"
+                android:textColor="@color/textWhite"
+                android:fontFamily="@font/nunitosemibold">
+            </TextView>
+
+            <EditText
+                android:layout_gravity="center"
+                android:gravity="top|left"
+                android:scrollbars="vertical"
+                android:id="@+id/et_add_set_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="2000"
+                android:hint="Enter your image url"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/textWhite"
+                android:textColorHint="@color/textGrey"
+                android:backgroundTint="#00FFFFFF"
+                android:fontFamily="@font/nunitolight"
+                android:textSize="25dp">
+            </EditText>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_add_set"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/card_round_corner_orange"
+            android:textColor="@color/backgroundWhite"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Add this set"
+            android:onClick="OnAddThisSetButtonClick">
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

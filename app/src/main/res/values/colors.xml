@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundDark">#15202b</color>
+    <color name="backgroundLight">#263544</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="textGrey">#8e8d8e</color>
+    <color name="backgroundWhite">#ffffff</color>
+    <color name="backgroundbluelight">#02bbda</color>
+    <color name="backgroundPurple">#7b04cb</color>
+    <color name="greendiff">#17bf63</color>
+    <color name="backgroundOrange">#feac1e</color>
+    <color name="backgroundPearl">#9531c79a</color>
+    <color name="backgroundGrey">#3a424d</color>
+</resources>

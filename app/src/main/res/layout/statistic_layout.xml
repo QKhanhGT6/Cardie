@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark"
+    tools:context=".AddCardActivity">
+    <ImageView
+        android:id="@+id/navBarImg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/card_round_corner_grey">
+    </ImageView>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_return"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnBackIconButton"
+            android:background="@drawable/ic_keyboard_arrow_left_black_24dp">
+        </TextView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Statistic"
+            android:textColor="@color/textWhite"
+            android:fontFamily="@font/nunitosemibold"
+            android:textSize="30dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@id/navBarImg"
+        android:layout_marginHorizontal="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total practice done: "
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/textWhite"
+                android:textSize="27dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_statistic_practice_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textAlignment="center"
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/backgroundbluelight"
+                android:textSize="27dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total exp points:      "
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/textWhite"
+                android:textSize="27dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_statistic_total_exp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textAlignment="center"
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/backgroundbluelight"
+                android:textSize="27dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average accuracy:   "
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/textWhite"
+                android:textSize="27dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_statistic_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textAlignment="center"
+                android:fontFamily="@font/nunitosemibold"
+                android:textColor="@color/backgroundbluelight"
+                android:textSize="27dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pow"
+                android:rotation="90">
+            </ImageView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pow">
+            </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

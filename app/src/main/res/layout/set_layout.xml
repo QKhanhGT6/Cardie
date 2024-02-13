@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="310dp"
+    android:layout_height="120dp"
+    android:background="@drawable/card_round_corner_bluelight"
+    android:layout_marginBottom="20dp"
+    app:cardBackgroundColor="@color/backgroundPurple">
+    <ImageView
+        android:id="@+id/iv_setbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true">
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/SetReview"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myset_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosemibold"
+            android:text="@string/card_sample"
+            android:textColor="@color/textWhite"
+            android:textSize="35dp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/iv_diff1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/difficulty_default">
+        </ImageView>
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/iv_diff2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/difficulty_default">
+        </ImageView>
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/iv_diff3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/difficulty_default">
+        </ImageView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_practice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/card_round_corner_orange"
+        android:fontFamily="@font/nunitosemibold"
+        android:text="PRACTICE"
+        android:textColor="@color/textWhite"
+        android:onClick="onPracticeButtonClick">
+
+    </Button>
+
+</androidx.cardview.widget.CardView>
