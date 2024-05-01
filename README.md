@@ -12,17 +12,17 @@ Key Features:
 Cardie leverages powerful libraries like Picasso and Lottie Animation to deliver an enriched user experience.
 
 ## Preview
-Main interface
+### Main interface
 ![Screenshot 2024-04-30 172310](https://github.com/QKhanhGT6/Cardie/assets/153789536/e37a17d9-ce99-488b-926a-8d0c0d30a7e0)
 
-Card (front) interface
+### Card (front) interface
 ![Screenshot 2024-04-30 172404](https://github.com/QKhanhGT6/Cardie/assets/153789536/36d284d8-b5de-4460-89d1-384970d34109)
 
-Card (back) interface
+### Card (back) interface
 ![Screenshot 2024-04-30 172414](https://github.com/QKhanhGT6/Cardie/assets/153789536/1ec79463-2afa-4f66-a9bf-9d6809750165)
 
-Practice interface
+### Practice interface
 ![Screenshot 2024-04-30 172438](https://github.com/QKhanhGT6/Cardie/assets/153789536/dfaeeded-9dfa-4861-b864-637ce28dd03b)
 
-Practice result interface
+### Practice result interface
 ![Screenshot 2024-04-30 172522](https://github.com/QKhanhGT6/Cardie/assets/153789536/51b01ae9-620b-452f-b0cd-f0ce3ccc4684)
